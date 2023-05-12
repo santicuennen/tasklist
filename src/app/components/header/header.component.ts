@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   title: string = 'TASK LIST';
+  toggleAddTask(){
+    console.log("header recibe el evento en su funcion");
+  }
 }
