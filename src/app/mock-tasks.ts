@@ -1,10 +1,10 @@
 import { Tasks } from "./Tasks"
-export const TASKS = [
+export const TASKS:Tasks[] = [
     {
         id: 1,
         task: "ñañaña",
         date: "12 de agosto",
-        reminder: true
+        reminder: false
     },
     {
         id: 2,
