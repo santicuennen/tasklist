@@ -24,4 +24,10 @@ export const TASKS:Tasks[] = [
         date: "22 de abril",
         reminder: true
     },
+    {
+        id: 5,
+        task: "caquita",
+        date: "5 de diciembre",
+        reminder: true
+    }
 ]

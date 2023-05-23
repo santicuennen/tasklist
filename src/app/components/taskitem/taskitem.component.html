@@ -1,5 +1,12 @@
 <div class="task"
-[ngClass]="{reminder:task.reminder}">
-    <h3>{{task.task}}</h3>
-    <p>{{task.date}}</p>
+    [ngClass]="{reminder:task.reminder}"
+    (click)="toggleTaskReminder()">
+        <h3>{{task.task}}  
+            <fa-icon 
+            [icon]="faTimes"
+            (click)="deleteTask()"            
+            >            
+            </fa-icon>
+        </h3>
+    <h4>{{task.date}}</h4>   
 </div>
