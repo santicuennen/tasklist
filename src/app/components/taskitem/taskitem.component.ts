@@ -18,5 +18,6 @@ export class TaskitemComponent {
    if (this.task.reminder){
     this.task.reminder=false
    }else{this.task.reminder=true}
+   console.log("ña");
   }
 }
