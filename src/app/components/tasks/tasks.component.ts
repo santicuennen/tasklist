@@ -14,5 +14,11 @@ constructor(private taskservice:TaskService){}
 ngOnInit():void{  
   this.taskservice.getTasks().subscribe(tasks=>this.tasks = tasks)
 }
+deleteTask(task:Tasks){
+  this.taskservice.deleteTask(task).subscribe(()=>{
+    this.tasks = this.tasks.filter(t=>t.id !== task.id)
+    }
+  )
+}
 
 }

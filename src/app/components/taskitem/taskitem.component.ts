@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Tasks } from '../../Tasks';
 import { TASKS } from '../../mock-tasks';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -10,14 +10,13 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 export class TaskitemComponent {
   faTimes = faTimes;
   @Input() task:Tasks = TASKS[0]
+  @Output() onDeleteTask: EventEmitter<Tasks>=new EventEmitter()
   
-  deleteTask(){
-    console.log("deleteTask");
+  deleteTask(task:Tasks){
+    console.log(task);
+    this.onDeleteTask.emit(task);
   }
   toggleTaskReminder(){
-   if (this.task.reminder){
-    this.task.reminder=false
-   }else{this.task.reminder=true}
    console.log("ña");
   }
 }
