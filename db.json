@@ -4,7 +4,7 @@
       "id": 1,
       "task": "sandunga",
       "date": "4 de abril",
-      "reminder": false 
+      "reminder": true
     },
     {
       "id": 2,

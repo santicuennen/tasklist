@@ -20,5 +20,8 @@ deleteTask(task:Tasks){
     }
   )
 }
-
+toggleReminder(task:Tasks){
+  task.reminder = !task.reminder
+  this.taskservice.updateReminder(task).subscribe()
+}
 }

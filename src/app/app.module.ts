@@ -9,6 +9,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { TaskitemComponent } from './components/taskitem/taskitem.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TaskFormComponent } from './components/task-form/task-form.component';
 
 
 
@@ -19,6 +20,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ButtonComponent,
     TasksComponent,
     TaskitemComponent,
+    TaskFormComponent,
    
   
   ],
