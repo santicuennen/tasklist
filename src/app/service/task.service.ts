@@ -28,5 +28,8 @@ export class TaskService {
     const chUrl=`${this.url}/${task.id}`
     return this.http.put<Tasks>(chUrl,task,httpOptions)
   }
+  addTask(task:Tasks):Observable<Tasks>{
+    return this.http.post<Tasks>(this.url,task,httpOptions)
+  }
 
 }

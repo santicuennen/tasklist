@@ -24,4 +24,9 @@ toggleReminder(task:Tasks){
   task.reminder = !task.reminder
   this.taskservice.updateReminder(task).subscribe()
 }
+addTask(task:Tasks){
+  this.taskservice.addTask(task).subscribe((task)=>{
+    this.tasks.push(task)
+  })
+}
 }

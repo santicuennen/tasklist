@@ -29,6 +29,18 @@
       "task": "caquita",
       "date": "5 de diciembre",
       "reminder": true
+    },
+    {
+      "task": "caca",
+      "date": "12 de diciembre",
+      "reminder": false,
+      "id": 6
+    },
+    {
+      "task": "estudiar angular",
+      "date": "12 de mayo",
+      "reminder": false,
+      "id": 7
     }
   ]
 }
