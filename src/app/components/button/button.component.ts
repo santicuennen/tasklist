@@ -14,6 +14,5 @@ export class ButtonComponent {
 
   onClick(){
     this.BtnClick.emit(); 
-    console.log("button emite el evento hacia header (se ejecuta despues)");
   }
 }

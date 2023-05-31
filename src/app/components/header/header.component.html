@@ -1,7 +1,9 @@
 <header>
     {{title}}
     <app-button 
-    color="#ffd700"
-    text="Add Task"
-    (BtnClick)="toggleAddTask()"></app-button>
+    color="{{showAddTask? '#8383c1':'#ffd700' }}"
+    text="{{showAddTask? 'Hide Form':'Add Task' }}"
+    (BtnClick)="toggleAddTask()"
+    *ngIf="hasRoute('/')"></app-button
+    >
 </header>

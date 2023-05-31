@@ -1,24 +1,6 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "task": "sandunga",
-      "date": "4 de abril",
-      "reminder": true
-    },
-    {
-      "id": 2,
-      "task": "pangalanaga",
-      "date": "2 de abril",
-      "reminder": true
-    },
-    {
-      "id": 3,
-      "task": "mecachoendiez",
-      "date": "16 de mayo",
-      "reminder": false
-    },
-    {
       "id": 4,
       "task": "dani es lo mas",
       "date": "22 de abril",
@@ -41,6 +23,18 @@
       "date": "12 de mayo",
       "reminder": false,
       "id": 7
+    },
+    {
+      "task": "estudiar todocode",
+      "date": "26 de mayo",
+      "reminder": true,
+      "id": 8
+    },
+    {
+      "task": "freecodecamp",
+      "date": "15 de julio",
+      "reminder": true,
+      "id": 9
     }
   ]
 }

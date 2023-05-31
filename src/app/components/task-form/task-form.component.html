@@ -1,4 +1,6 @@
-<form (ngSubmit)="onSubmit()">
+<form 
+(ngSubmit)="onSubmit()"
+*ngIf="showAddTask">
     <div class="form-control">
         <label for="text">TASK NAME</label>
         <input type="task" name="task" id="task" placeholder="add a new task" [(ngModel)]="task">
